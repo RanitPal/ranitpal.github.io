@@ -1,0 +1,50 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: rgb(226, 168, 8);
+      font-family: "Big Shoulders Display", sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 1s ease-in-out;
+    }
+
+    .container.reveal {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    h1 {
+      font-size: 120px;
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-size: 30px;
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
